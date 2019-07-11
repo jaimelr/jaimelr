@@ -1,0 +1,19 @@
+.container.home-container
+  .row
+    .columns
+      %a.column.home__section{href: 'https://dev.to/jjaimelr'}
+        .h2.home__section-title DevEx
+      %a.column.home__section{href: 'https://github.com/jaimelr/DevsCheatSheet'}
+        .h2.home__section-title Devs Cheat Sheet
+  .row
+    .columns
+      %a.column.home__section.home__bot-section{href: 'talks'}
+        .h2.home__section-title Talks
+      %a.column.home__section.home__bot-section{href: 'https://twitter.com/jjaimelr'}
+        .h2.home__section-title Opinion
+  .profile-container
+    .profile__circle.profile__img-container.front
+      = image_tag 'developer.png', srcset: { 'developer@2x.png': '2x' }, alt: 'Jaime profile photo', class: 'profile__img'
+    %a.profile__circle.profile__link.back{href: '/profile'}
+      %p Jaime Loyola
+      %i.fa.fa-external-link
