@@ -1,1 +1,24 @@
-%h1 Comming soon :D
+.hero.profile.is-medium.is-info.is-fullheight
+  .hero-body.profile__body
+    = image_tag 'developer.png', srcset: { 'developer@2x.png': '2x' }, alt: 'Jaime profile photo', class: 'profile__img'
+    %h1.title Jaime Loyola
+    .profile__intro.container
+      %p Hello stranger, thanks for visiting my site. Since my name is all around here I'll just go ahead and introduce myself: I'm a brand new developer working with Ruby on Rails mainly that also loves creating stuff with HTML, CSS y JS. I love learning and specially sharing knowledge.
+    %br
+    .profile__contact.container
+      %p If you want to get in touch with me to invite me to join a developer community, give a talk or contribute to Open Source I'll be super happy to hear from you!
+      .tabs.is-centered.is-large
+        %ul.profile__icons
+          %li.profile__icon
+            = link_to 'https://twitter.com/JJaimelr' do
+              %i.fa.fa-twitter
+          %li.profile__icon
+            = link_to 'https://github.com/jaimelr' do
+              %i.fa.fa-github
+          %li.profile__icon
+            = link_to 'https://www.linkedin.com/in/jaimelr' do
+              %i.fa.fa-linkedin
+  .hero-foot
+    %span Made with
+    %i.fa.fa-heart
+    %span in Victoria, MX.
