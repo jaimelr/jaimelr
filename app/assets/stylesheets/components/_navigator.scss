@@ -1,0 +1,15 @@
+.navigator {
+  position: absolute;
+  bottom: 30px;
+  right: 15px;
+
+  &__home-link {
+    background-color: $citrine;
+    border: none;
+    border-radius: 50%;
+    color: $baby-powder;
+    display: flex;
+    font-size: 24px;
+    padding: 15px;
+  }
+}
